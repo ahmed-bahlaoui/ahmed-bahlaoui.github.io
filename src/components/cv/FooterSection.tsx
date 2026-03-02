@@ -1,7 +1,7 @@
 import { Mail, Linkedin, Github } from "lucide-react";
 
 const FooterSection = () => (
-  <footer className="hero-gradient text-primary-foreground py-16 px-6">
+  <footer id="contact" className="hero-gradient text-primary-foreground py-16 px-6">
     <div className="max-w-4xl mx-auto text-center">
       <h2 className="text-2xl md:text-3xl font-bold font-display mb-4">Let's Connect</h2>
       <p className="opacity-70 mb-8 text-sm">

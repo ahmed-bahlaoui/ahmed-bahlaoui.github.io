@@ -4,7 +4,7 @@ import { Briefcase } from "lucide-react";
 import { ChromaCard } from "../ui/ChromaCard";
 
 const ExperienceSection = () => (
-  <section className="py-24 px-6">
+  <section id="experience" className="py-24 px-6">
     <div className="max-w-4xl mx-auto">
       <SectionHeading title="Experience" />
       <motion.div

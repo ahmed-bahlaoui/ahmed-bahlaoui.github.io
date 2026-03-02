@@ -4,7 +4,7 @@ import { Heart } from "lucide-react";
 import { ChromaCard } from "../ui/ChromaCard";
 
 const VolunteeringSection = () => (
-  <section className="py-24 px-6">
+  <section id="volunteering" className="py-24 px-6">
     <div className="max-w-4xl mx-auto">
       <SectionHeading title="Volunteering" />
       <motion.div

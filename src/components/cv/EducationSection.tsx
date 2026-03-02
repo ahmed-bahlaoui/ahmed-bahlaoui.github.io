@@ -4,7 +4,7 @@ import { GraduationCap } from "lucide-react";
 import { ChromaCard } from "../ui/ChromaCard";
 
 const EducationSection = () => (
-  <section className="py-24 px-6 section-alt">
+  <section id="education" className="py-24 px-6 section-alt">
     <div className="max-w-4xl mx-auto">
       <SectionHeading title="Education" />
       <motion.div

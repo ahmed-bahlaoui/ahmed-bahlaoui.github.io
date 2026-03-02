@@ -45,7 +45,7 @@ const item = {
 };
 
 const ProjectsSection = () => (
-  <section className="py-24 px-6 section-alt">
+  <section id="projects" className="py-24 px-6 section-alt">
     <div className="max-w-4xl mx-auto">
       <SectionHeading title="Projects" />
       <motion.div

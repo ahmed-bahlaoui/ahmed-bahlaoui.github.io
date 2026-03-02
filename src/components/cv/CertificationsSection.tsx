@@ -11,7 +11,7 @@ const certs = [
 ];
 
 const CertificationsSection = () => (
-  <section className="py-24 px-6">
+  <section id="certifications" className="py-24 px-6">
     <div className="max-w-4xl mx-auto">
       <SectionHeading title="Certifications" />
       <div className="grid gap-4 sm:grid-cols-2">

@@ -21,7 +21,7 @@ const item = {
 };
 
 const SkillsSection = () => (
-  <section className="py-24 px-6">
+  <section id="skills" className="py-24 px-6">
     <div className="max-w-4xl mx-auto">
       <SectionHeading title="Skills" />
       <motion.div

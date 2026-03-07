@@ -19,6 +19,7 @@ const FooterSection = () => (
       <div className="flex items-center justify-center gap-5 mb-8">
         <a
           href="mailto:AhmedBahlaoui@outlook.com"
+          aria-label="Email Ahmed Bahlaoui"
           className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors"
         >
           <Mail size={16} />
@@ -27,6 +28,7 @@ const FooterSection = () => (
           href="https://linkedin.com/in/ahmed-bahlaoui"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Visit Ahmed Bahlaoui on LinkedIn"
           className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors"
         >
           <Linkedin size={16} />
@@ -35,6 +37,7 @@ const FooterSection = () => (
           href="https://github.com/ahmed-bahlaoui"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Visit Ahmed Bahlaoui on GitHub"
           className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors"
         >
           <Github size={16} />

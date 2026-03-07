@@ -90,7 +90,7 @@ const item = {
 };
 
 const SkillsSection = () => (
-  <section id="skills" className="py-24 px-6 relative z-10">
+  <section id="skills" className="py-24 px-6 relative">
     <div className="max-w-5xl mx-auto">
       <SectionHeading title="Skills" />
       <div className="space-y-16 mt-12">
@@ -104,8 +104,8 @@ const SkillsSection = () => (
             className="space-y-6"
           >
             <div className="flex items-center gap-3 mb-6">
-              <group.icon className="w-8 h-8 text-foreground/80" />
-              <h3 className="text-2xl font-bold text-foreground font-display tracking-tight uppercase">
+              <group.icon className="w-8 h-8 text-white/80" />
+              <h3 className="text-2xl font-bold text-white font-display tracking-tight uppercase">
                 {group.label}
               </h3>
             </div>
@@ -114,14 +114,14 @@ const SkillsSection = () => (
               {group.skills.map((skill) => (
                 <motion.div key={skill.name} variants={item}>
                   <SpotlightCard 
-                    className="bg-card/40 backdrop-blur-md rounded-2xl p-6 border border-white/5 shadow-sm h-full flex flex-col items-center justify-center gap-4 group cursor-default"
+                    className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 shadow-sm h-full flex flex-col items-center justify-center gap-4 group cursor-default"
                     spotlightColor={`${skill.color}33`} // Default to 20% opacity of the brand color by appending hex alpha
                   >
                     <skill.icon 
                       className="w-12 h-12 transition-transform duration-300 group-hover:scale-110 group-hover:-translate-y-1 relative z-10" 
                       style={{ color: skill.color }} 
                     />
-                    <span className="text-sm font-medium text-foreground/90 text-center relative z-10">
+                    <span className="text-sm font-medium text-white/90 text-center relative z-10">
                       {skill.name}
                     </span>
                   </SpotlightCard>

@@ -13,8 +13,8 @@ const SectionHeading = ({ title, subtitle }: Props) => (
     transition={{ duration: 0.5 }}
     className="mb-12"
   >
-    <h2 className="text-3xl md:text-4xl font-bold font-display text-foreground">{title}</h2>
-    {subtitle && <p className="mt-2 text-muted-foreground">{subtitle}</p>}
+    <h2 className="text-3xl md:text-4xl font-bold font-display text-white">{title}</h2>
+    {subtitle && <p className="mt-2 text-white/60">{subtitle}</p>}
     <div className="mt-4 h-1 w-12 rounded-full bg-accent" />
   </motion.div>
 );

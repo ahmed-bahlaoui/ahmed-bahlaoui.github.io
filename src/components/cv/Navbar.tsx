@@ -36,7 +36,7 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-background/80 backdrop-blur-lg border-b border-border shadow-sm"
+          ? "bg-black/60 backdrop-blur-lg border-b border-white/10 shadow-sm"
           : "bg-transparent"
       }`}
     >
@@ -47,9 +47,7 @@ const Navbar = () => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
-          className={`text-sm font-bold font-display tracking-tight transition-colors ${
-            scrolled ? "text-foreground" : "text-primary-foreground"
-          }`}
+          className={`text-sm font-bold font-display tracking-tight transition-colors text-white`}
         >
           AB
         </a>
@@ -62,7 +60,7 @@ const Navbar = () => {
               href={l.href}
               onClick={(e) => handleClick(e, l.href)}
               className={`text-xs font-medium tracking-wide uppercase transition-colors hover:text-accent ${
-                scrolled ? "text-muted-foreground" : "text-primary-foreground/70"
+                scrolled ? "text-white/70" : "text-primary-foreground/70"
               }`}
             >
               {l.label}
@@ -73,9 +71,7 @@ const Navbar = () => {
         {/* Mobile toggle */}
         <button
           onClick={() => setOpen(!open)}
-          className={`md:hidden transition-colors ${
-            scrolled ? "text-foreground" : "text-primary-foreground"
-          }`}
+          className={`md:hidden transition-colors text-white`}
           aria-label="Toggle menu"
         >
           {open ? <X size={20} /> : <Menu size={20} />}
@@ -89,7 +85,7 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-background/95 backdrop-blur-lg border-b border-border overflow-hidden"
+            className="md:hidden bg-black/80 backdrop-blur-lg border-b border-white/10 overflow-hidden"
           >
             <div className="flex flex-col px-6 py-4 gap-3">
               {links.map((l) => (
@@ -97,7 +93,7 @@ const Navbar = () => {
                   key={l.label}
                   href={l.href}
                   onClick={(e) => handleClick(e, l.href)}
-                  className="text-sm text-muted-foreground hover:text-accent transition-colors text-left py-2"
+                  className="text-sm text-white/70 hover:text-accent transition-colors text-left py-2"
                 >
                   {l.label}
                 </a>

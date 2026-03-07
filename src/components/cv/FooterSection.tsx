@@ -1,14 +1,10 @@
 import { Mail, Linkedin, Github } from "lucide-react";
-import DarkVeil from "../ui/DarkVeil";
 
 const FooterSection = () => (
   <footer
     id="contact"
-    className="relative bg-background text-primary-foreground py-16 px-6 overflow-hidden"
+    className="relative text-primary-foreground py-16 px-6 overflow-hidden"
   >
-    <div className="absolute inset-0 z-0">
-      <DarkVeil speed={2} />
-    </div>
     <div className="relative z-10 max-w-4xl mx-auto text-center">
       <h2 className="text-2xl md:text-3xl font-bold font-display mb-4">
         Let's Connect

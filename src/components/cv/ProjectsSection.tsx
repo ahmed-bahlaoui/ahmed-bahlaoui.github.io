@@ -45,7 +45,7 @@ const item = {
 };
 
 const ProjectsSection = () => (
-  <section id="projects" className="py-24 px-6 section-alt">
+  <section id="projects" className="py-24 px-6 relative">
     <div className="max-w-4xl mx-auto">
       <SectionHeading title="Projects" />
       <motion.div
@@ -60,24 +60,24 @@ const ProjectsSection = () => (
             key={p.title}
             variants={item}
           >
-            <SpotlightCard className="bg-card rounded-xl p-6 border border-border shadow-sm hover:shadow-md transition-shadow group h-full">
+            <SpotlightCard className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 shadow-sm hover:shadow-md transition-shadow group h-full">
               <div className="flex items-start justify-between mb-3">
-                <h3 className="text-base font-semibold font-display text-foreground leading-snug">{p.title}</h3>
-                <ExternalLink size={14} className="text-muted-foreground mt-1 opacity-0 group-hover:opacity-100 transition-opacity" />
+                <h3 className="text-base font-semibold font-display text-white leading-snug">{p.title}</h3>
+                <ExternalLink size={14} className="text-white/40 mt-1 opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
               <div className="flex gap-2 mb-4 flex-wrap">
                 {p.tech.split(" · ").map((t) => (
-                  <span key={t} className="text-xs px-2.5 py-1 rounded-full bg-accent/10 text-accent font-medium">
+                  <span key={t} className="text-xs px-2.5 py-1 rounded-full bg-accent/20 text-accent font-medium">
                     {t}
                   </span>
                 ))}
                 {p.year && (
-                  <span className="text-xs px-2.5 py-1 rounded-full bg-secondary text-muted-foreground">
+                  <span className="text-xs px-2.5 py-1 rounded-full bg-white/10 text-white/60">
                     {p.year}
                   </span>
                 )}
               </div>
-              <ul className="space-y-1.5 text-muted-foreground text-sm leading-relaxed">
+              <ul className="space-y-1.5 text-white/60 text-sm leading-relaxed">
                 {p.points.map((pt, i) => (
                   <li key={i}>• {pt}</li>
                 ))}

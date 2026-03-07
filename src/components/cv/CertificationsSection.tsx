@@ -11,7 +11,7 @@ const certs = [
 ];
 
 const CertificationsSection = () => (
-  <section id="certifications" className="py-24 px-6">
+  <section id="certifications" className="py-24 px-6 relative">
     <div className="max-w-4xl mx-auto">
       <SectionHeading title="Certifications" />
       <div className="grid gap-4 sm:grid-cols-2">
@@ -23,11 +23,11 @@ const CertificationsSection = () => (
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: i * 0.1 }}
           >
-            <SpotlightCard className="flex items-start gap-3 bg-card rounded-xl p-5 border border-border h-full group">
+            <SpotlightCard className="flex items-start gap-3 bg-white/5 backdrop-blur-sm rounded-xl p-5 border border-white/10 h-full group">
               <Award size={18} className="text-accent mt-0.5 flex-shrink-0" />
               <div>
-                <p className="text-sm font-medium text-foreground">{c.name}</p>
-                <p className="text-xs text-muted-foreground mt-1">{c.issuer}</p>
+                <p className="text-sm font-medium text-white">{c.name}</p>
+                <p className="text-xs text-white/50 mt-1">{c.issuer}</p>
               </div>
             </SpotlightCard>
           </motion.div>
